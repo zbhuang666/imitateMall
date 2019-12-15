@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travelsky.mall.imitatemallsso.mapper.UserMapper">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="User" id="UserMap">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="username" property="username" jdbcType="VARCHAR"/>
+        <result column="password" property="password" jdbcType="VARCHAR"/>
+        <result column="email" property="email" jdbcType="VARCHAR"/>
+        <result column="phone" property="phone" jdbcType="BIGINT"/>
+    </resultMap>
+
+
+    <select id="getUser" resultType="com.travelsky.mall.imitatemallsso.bean.User">
+        select * from mall_user a where a.username=#{username} and a.password=#{password}
+    </select>
+
+
+</mapper>

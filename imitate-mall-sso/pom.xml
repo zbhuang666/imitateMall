@@ -13,5 +13,4 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>imitate-mall-sso</name>
     <description>redis实现单点登录</description>
-
 </project>

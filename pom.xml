@@ -19,6 +19,9 @@
         <mybatis.version>2.1.1</mybatis.version>
         <mysql.version>8.0.18</mysql.version>
         <redis.version>2.2.1.RELEASE</redis.version>
+        <test.version>2.2.2.RELEASE</test.version>
+        <ibatis.version>3.0</ibatis.version>
+        <fastjson.version>1.2.62</fastjson.version>
     </properties>
     <dependencies>
         <dependency>
@@ -46,6 +49,30 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
             <version>${redis.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-parent</artifactId>
+            <version>2.2.2.RELEASE</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${test.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.ibatis</groupId>
+            <artifactId>ibatis-core</artifactId>
+            <version>${ibatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+
     </dependencies>
     <build>
         <plugins>
