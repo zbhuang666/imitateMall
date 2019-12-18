@@ -33,7 +33,7 @@ public class AuthorizationInterceptor implements HandlerInterceptor {
             String token = request.getHeader("token");
             String username = "";
             if (token != null && token != "") {
-                redisTemplate.opsForValue().get(token);
+                username = (String) redisTemplate.opsForValue().get(token);
             }
             if (username != "" && username != null) {
                 Long tokenBirthDay = (Long) redisTemplate.opsForValue().get(token + username);
