@@ -21,7 +21,7 @@
         <redis.version>2.2.1.RELEASE</redis.version>
         <test.version>2.2.2.RELEASE</test.version>
         <ibatis.version>3.0</ibatis.version>
-        <fastjson.version>1.2.62</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
     </properties>
     <dependencies>
         <dependency>
